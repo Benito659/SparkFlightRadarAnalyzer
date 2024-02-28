@@ -1,0 +1,14 @@
+docker build -f Dockerfile.airflow . -t airflow-spark:latest
+set AIRFLOW_UID=50000
+docker-compose -f docker-compose.airflow.yaml up airflow-init
+docker-compose -f docker-compose.airflow.yaml up 
+
+
+
+
+.\flight-air1\Scripts\activate
+python server.py
+
+
+tmp_path ==  Airlines/rawzone/tech_year=2024/tech_month=January-2024/tech_day=24-January-2024/airlines1706088732.013574/tmp_data
+Current Working Directory: C:\Users\BENITO WHANNOU\Downloads\flyradarproject\benitp-flight-radar
